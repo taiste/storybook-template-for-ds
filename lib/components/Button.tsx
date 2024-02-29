@@ -7,7 +7,7 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
-const Button = (props: ButtonProps) => {
+export const Button = (props: ButtonProps) => {
   const { type = 'default', disabled = false, label = '', onClick = undefined } = props;
 
   const buttonClasses = ['button', `button--${type}`, disabled ? 'disabled' : undefined].join(' ');
