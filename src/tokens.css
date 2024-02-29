@@ -1,0 +1,34 @@
+/*
+    These values could be generated from a source token file 
+    that was for example exported from Figma using a tool like style-dictionary
+*/
+
+:root {
+  /* COLOR */
+  --color--black: black;
+  --color--white: white;
+  --color--red: red;
+  --color--blue: blue;
+  --color--green: green;
+
+  /* DIMENSION */
+  --dimension--1: 0.25rem;
+  --dimension--2: 0.5rem;
+  --dimension--3: 1rem;
+  --dimension--4: 1.5rem;
+  --dimension--5: 2rem;
+
+  /* FONT */
+  --lineheight--1: 1rem;
+  --lineheight--2: 1.5rem;
+  --lineheight--3: 2rem;
+
+  --fontsize--1: 0.875rem;
+  --fontsize--2: 1rem;
+  --fontsize--3: 1.125rem;
+
+  --letterspacing--normal: normal;
+
+  --fontweight--normal: normal;
+  --fontweight--bold: bold;
+}

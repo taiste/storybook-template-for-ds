@@ -1,0 +1,25 @@
+.button {
+  display: inline-flex;
+  border-style: solid;
+  border-width: 1px;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button.disabled {
+  opacity: 0.5;
+  border-color: var(--color--white);
+  cursor: not-allowed;
+}
+
+.button--default {
+  color: var(--color--black);
+  border-color: var(--color--black);
+}
+
+.button--primary {
+  color: var(--color--white);
+  border-color: var(--color--blue);
+  background-color: var(--color--blue);
+}
