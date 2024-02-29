@@ -11,6 +11,9 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
+  async viteFinal(config) {
+    return config;
+  },
   docs: {
     autodocs: "tag",
   },
