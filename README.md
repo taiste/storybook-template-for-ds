@@ -1,1 +1,2 @@
-Vite requires Node version 18+
+- Vite requires Node version 18+
+- Template is in TS/React
