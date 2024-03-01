@@ -1,13 +1,13 @@
 {
   "name": "storybook-template-for-ds",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/best-library-ever.umd.cjs",
-  "module": "./dist/best-library-ever.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -39,6 +39,7 @@
     "prettier": "^3.2.5",
     "storybook": "^7.6.17",
     "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "vite-plugin-dts": "^3.7.3"
   }
 }
