@@ -9,7 +9,7 @@ Open and develop in Storybook:
 
 - Run "npm run storybook"
 
-Build and test locally
+Build and test locally (optional)
 
 - Run "npm run build"
 - In App.tsx, import testable components from "dist/" and use them
