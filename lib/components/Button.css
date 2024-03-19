@@ -3,7 +3,7 @@
   border-style: solid;
   border-width: 1px;
   appearance: none;
-  background-color: transparent;
+  background-color: var(--color--bright-green);
   cursor: pointer;
   padding: var(--dimension--2);
 }

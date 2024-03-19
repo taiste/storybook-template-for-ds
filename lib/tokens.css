@@ -1,5 +1,5 @@
 /*
-    These values could be generated from a source token file 
+    These values could be generated from a source token file
     that was for example exported from Figma using a tool like style-dictionary
 */
 
@@ -10,6 +10,13 @@
   --color--red: red;
   --color--blue: blue;
   --color--green: green;
+
+  --color--bright-green-1: #D1FFE7;
+  --color--bright-green-2: #75FEB7;
+  --color--bright-green-3: #19FE87;
+  --color--bright-green-4: #14DD75;
+  --color--bright-green-5: #0B9E51;
+  --color--bright-green-5: #046331;
 
   /* DIMENSION */
   --dimension--1: 0.25rem;
