@@ -1,4 +1,5 @@
 import React from 'react';
+import LogoOneSvg from '../images/logo-one.svg';
 
 export interface LogoProps {
     src: string;
@@ -8,7 +9,7 @@ export interface LogoProps {
   const Logo: React.FC<LogoProps> = ({ src, alt }) => {
     return (
       <div className="logo-container">
-        <img className="logo-image" src={src} alt={alt} />
+        <LogoOneSvg className="logo-image" src={src} alt={alt} />
       </div>
     );
   };
