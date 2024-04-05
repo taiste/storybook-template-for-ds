@@ -6,6 +6,7 @@
   background-color: var(--color--bright-green);
   cursor: pointer;
   padding: var(--dimension--2);
+  font-family: var(--fontfamily--header);
 }
 
 .button.disabled {

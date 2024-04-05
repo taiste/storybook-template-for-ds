@@ -38,4 +38,7 @@
 
   --fontweight--normal: normal;
   --fontweight--bold: bold;
+
+  --fontfamily--body: "Lexend Mega", sans-serif;
+  --fontfamily--header: "Big Shoulders Display", sans-serif;
 }

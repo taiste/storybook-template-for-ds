@@ -1,8 +1,7 @@
 .title-big {
-  /*font-family: var();*/
+  font-family: var(--fontfamily--header);
   font-size: var(--fontsize--3);
   line-height: var(--lineheight--3);
   letter-spacing: var(--letterspacing--normal);
   font-weight: var(--fontweight--bold);
 }
-/*lisää font family*/
