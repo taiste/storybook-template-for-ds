@@ -1,0 +1,14 @@
+.text-section {
+    margin-bottom: 20px;
+  }
+
+  .text-section-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .text-section-content {
+    font-size: var(--fontsize--3);
+    font-family: "Lexend Mega", sans-serif;
+  }
+
