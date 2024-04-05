@@ -10,6 +10,6 @@ const Template: Story<LogoProps> = (args) => <Logo {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  src: '../images/logo-one.svg',
+  src: 'lib/images/logo-one.svg',
   alt: 'Mimmit Koodaa Logo',
 };
