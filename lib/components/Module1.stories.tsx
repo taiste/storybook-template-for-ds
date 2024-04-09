@@ -21,4 +21,8 @@ Default.args = {
     type: 'default',
     disabled: false,
   },
+  logoProps: {
+    src: 'lib/images/logo-one.svg',
+    alt: 'Mimmit Koodaa Logo',
+  }
 };
