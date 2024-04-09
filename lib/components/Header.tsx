@@ -1,13 +1,21 @@
-// Header.tsx
-import React from 'react';
-import './Header.css'; // Import CSS file
+export type HeaderType = 'default' | 'custom';
 
 export interface HeaderProps {
+  type?: HeaderType;
   text: string;
 }
 
-export const Header: React.FC<HeaderProps> = ({ text }) => {
-  return <h1 className="header">{text}</h1>; // Apply CSS class
+export const Header = (props: HeaderProps) => {
+  const { type = 'default', text = ''} = props;
+
+  const headerClasses = ['header', `header--${type}`].join(' ');
+
+  return (
+  <h1 className={headerClasses}>
+    {text}
+  </h1>
+  );
 };
 
 export default Header;
+
