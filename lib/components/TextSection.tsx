@@ -1,14 +1,18 @@
-import React from 'react';
-import './TextSection.css';
+export type TextSectionType = 'title' | 'content';
 
 export interface TextSectionProps {
+  type?: TextSectionType;
   title: string;
   content: string;
 }
 
-const TextSection: React.FC<TextSectionProps> = ({ title, content }) => {
+export const TextSection = (props: TextSectionProps) => {
+  const { type = 'title', title = '', content = '' } = props;
+
+  const textSectionClasses = ['text-section', `text-section--${type}`].join(' ');
+
   return (
-    <div className="text-section">
+    <div className={textSectionClasses}>
       <h2 className="text-section-title">{title}</h2>
       <p className="text-section-content">{content}</p>
     </div>

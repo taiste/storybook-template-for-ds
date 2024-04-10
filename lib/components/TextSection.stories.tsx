@@ -1,23 +1,23 @@
-import { Meta, Story } from '@storybook/react';
-import TextSection, { TextSectionProps } from './TextSection';
+import { Meta, StoryObj } from '@storybook/react';
+import TextSection from './TextSection';
 
-const meta: Meta<TextSectionProps> = {
-  title: 'Components/TextSection',
+const meta: Meta<typeof TextSection> = {
   component: TextSection,
 };
-
 export default meta;
 
-const Template: Story<TextSectionProps> = (args) => <TextSection {...args} />;
+type Story = StoryObj<typeof TextSection>;
 
-export const Default = Template.bind({});
-Default.args = {
-  title: 'Default Title',
-  content: 'Default content for the text section.',
+export const Default: Story =  {
+  args: {
+    title: 'Default Title',
+    content: 'Default content for the text section.',
+  },
 };
 
-export const CustomText = Template.bind({});
-CustomText.args = {
-  title: 'Custom Title',
-  content: 'Custom content for the text section.',
+export const CustomText: Story =  {
+  args: {
+    title: 'Custom Title',
+    content: 'Custom content for the text section.',
+  },
 };
