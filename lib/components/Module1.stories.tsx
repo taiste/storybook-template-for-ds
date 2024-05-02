@@ -1,17 +1,16 @@
-import { Meta, Story } from '@storybook/react';
-import Module1, { Module1Props } from './Module1';
+import { Meta, StoryObj } from '@storybook/react';
+import Module1 from './Module1';
 
-const meta: Meta<Module1Props> = {
-  title: 'Components/Module1',
+const meta: Meta<typeof Module1> = {
   component: Module1,
 };
 
 export default meta;
 
-const Template: Story<Module1Props> = (args) => <Module1 {...args} />;
+type Story = StoryObj<typeof Module1>;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Default: Story = {
+args : {
   textSectionProps: {
     title: 'Default Title',
     content: 'Default content for the text section.',
@@ -25,4 +24,5 @@ Default.args = {
     src: 'lib/images/logo-one.svg',
     alt: 'Mimmit Koodaa Logo',
   }
+}
 };

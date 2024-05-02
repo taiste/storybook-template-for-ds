@@ -1,18 +1,23 @@
-import React from 'react';
 import TextSection, { TextSectionProps } from './TextSection';
 import Button, { ButtonProps } from './Button';
 import Logo, { LogoProps } from './Logo';
-import './Module1.css';
 
-interface Module1Props {
+export type Module1Type = 'default';
+
+export interface Module1Props {
+  type?: Module1Type
   textSectionProps: TextSectionProps;
   buttonProps: ButtonProps;
   logoProps: LogoProps;
 }
 
-const Module1: React.FC<Module1Props> = ({ textSectionProps, buttonProps, logoProps }) => {
+export const Module1 = (props: Module1Props) => {
+  const { type = 'default', textSectionProps, buttonProps, logoProps} = props;
+
+  const module1Classes = ['module1', `module--${type}`].join(' ');
+
   return (
-    <div className="module1">
+    <div className={module1Classes}>
       <TextSection {...textSectionProps} />
       <Button {...buttonProps} />
       <Logo {...logoProps} />
