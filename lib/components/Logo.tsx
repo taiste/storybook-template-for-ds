@@ -1,14 +1,21 @@
-import React from 'react';
+export type LogoType = 'default';
 
 export interface LogoProps {
+    type?: LogoType;
     src: string;
     alt: string;
   }
 
-  const Logo: React.FC<LogoProps> = ({ src, alt }) => {
+  export const Logo = (props: LogoProps) => {
+    const { src = '', alt = ''} = props;
+
+    const logoContainerClass = ['logo-container',];
+
+    const logoImageClass = ['logo-image',];
+
     return (
-      <div className="logo-container">
-        <img className="logo-image" src={src} alt={alt} />
+      <div className={logoContainerClass}>
+        <img className={logoImageClass} src={src} alt={alt} />
       </div>
     );
   };

@@ -1,15 +1,17 @@
-import { Story, Meta } from '@storybook/react';
-import Logo, { LogoProps } from './Logo';
+import { StoryObj, Meta } from '@storybook/react';
+import Logo from './Logo';
 
-export default {
-  title: 'Components/Logo',
+const meta: Meta<typeof Logo> = {
   component: Logo,
-} as Meta;
-
-const Template: Story<LogoProps> = (args) => <Logo {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
-  src: 'lib/images/logo-one.svg',
-  alt: 'Mimmit Koodaa Logo',
 };
+export default meta;
+
+type Story = StoryObj<typeof Logo>;
+
+export const Default: Story = {
+  args: {
+    type: 'default',
+    src: 'lib/images/logo-one.svg',
+    alt: 'Mimmit Koodaa Logo',
+  }
+}
